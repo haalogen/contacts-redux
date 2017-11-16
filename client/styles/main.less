@@ -1,0 +1,165 @@
+@import "font-awesome/css/font-awesome.min.css";
+@import url("https://fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic");
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Poiret One", cursive;
+  font-size: 28px;
+  color: #222;
+  transition: all 0.5s;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.wrapper {
+}
+
+.contacts-list, header {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0.1);
+
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+button.remove:hover {
+  background-color: rgba(255,0,0,0.6);
+}
+button.edit:hover {
+  background-color: rgba(255,255,0,0.6);
+}
+
+header {
+  max-height: 70vh;
+}
+
+// Buttons Bar
+.btns-bar {
+  margin: 0 auto;
+  width: 80%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin: 0 8px;
+  }
+}
+
+
+// Search bar
+.search-bar {
+  margin-top: 5px;
+  min-width: 80%;
+}
+
+
+// Add Form, Edit Form
+form.add-contact,
+form.edit-contact  {
+  max-width: 80%;
+  border: 3px solid #777;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    label {
+        width: 50px;
+        padding: 5px;
+      }
+      input, textarea {
+        border: 2px solid #777;
+        background-color: rgba(0,50,0,0.2);
+        flex: 3;
+        margin-right: 10px;
+      }
+  }
+}
+
+
+// Contacts List
+.contacts-list {
+  min-height: 20vh;
+  max-height: 85vh;
+  overflow-y: scroll;
+}
+
+
+
+// Individual Contact
+.contact {
+  width: 90%;
+  padding: 5px 0;
+  border-bottom: 1px solid #bbb;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  button {
+    display: none;
+  }
+
+
+  &:hover {
+    background-color: rgba(0,0,255,0.2);
+    cursor: pointer;
+
+    button {
+      display: block;
+    }
+
+  }
+
+  .header {
+    display: flex;
+
+    p {
+      flex: 2;
+      text-align: left;
+      padding-left: 40px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .card {
+    font-size: 0.75em;
+
+    * {
+      margin-top: 5px;
+    }
+
+    img {
+      width: 50px;
+      margin: 0;
+    }
+  }
+
+}
+
+
+// Footer
+footer {
+  max-height: 10vh;
+  display: flex;
+  background-color: #222;
+  justify-content: space-around;
+  align-items: center;
+  p {
+    margin: 0;
+    padding: 10px;
+    font-size: 24px;
+    color: #ddd;
+  }
+}

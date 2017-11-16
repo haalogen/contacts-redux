@@ -1,0 +1,64 @@
+[{
+    "name": "Алексей Навальный",
+    "image": "man.svg",
+    "info": "Политик-оппозиционер. Выбрал вилку",
+    "tel": "88005553535",
+    "telegram": "navalny"
+  },
+  {
+    "name": "Наталья Поклонская",
+    "image": "girl.svg",
+    "info": "Депутат Госдумы. Няш-мяш",
+    "tel": "148",
+    "telegram": "nyash"
+  },
+  {
+    "name": "Павел Дуров",
+    "image": "man.svg",
+    "info": "Создатель ВК и Telegram",
+    "tel": "2128506",
+    "telegram": "durov"
+  },
+  {
+    "name": "Рамзан Кадыров",
+    "image": "man_gray.svg",
+    "info": "Первого русского спас в 16 лет",
+    "tel": "282",
+    "telegram": "ramzan"
+  },
+  {
+    "name": "Иван Алексеев",
+    "image": "man_gray.svg",
+    "info": "Noize MC всея Руси",
+    "tel": "55555",
+    "telegram": "noize"
+  },
+  {
+    "name": "Елена Мизулина",
+    "image": "man_gray.svg",
+    "info": "Милонов в юбке",
+    "tel": "999",
+    "telegram": "mizulina"
+  },
+  {
+    "name": "Виталий Милонов",
+    "image": "man.svg",
+    "info": "Рыжий Властелин",
+    "tel": "666",
+    "telegram": "milonov"
+  },
+  {
+    "name": "Юрий Хованский",
+    "image": "man.svg",
+    "info": "Будет похоронен на хованском кладбище.",
+    "tel": "333",
+    "telegram": "mamku_ipal"
+  },
+  {
+    "name": "Илья Давыдов",
+    "image": "man.svg",
+    "info": "Фанат группы \"Пилигрим\"",
+    "tel": "300",
+    "telegram": "pierre_dunn"
+  }
+]
