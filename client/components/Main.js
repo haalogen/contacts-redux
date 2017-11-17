@@ -50,7 +50,8 @@ class Main extends React.Component {
 
     return (
       <Contact key={key} {...value}
-        removeContact={this.removeContact}
+        removeContact={this.props.removeContact}
+        editContact={this.props.editContact}
       />
     )
   }

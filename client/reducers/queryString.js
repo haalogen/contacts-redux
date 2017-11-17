@@ -6,8 +6,8 @@
 
 
 // Manages updating the queryString
+// state === queryString
 function queryString(state='', action) {
-  console.log({state, action});
   switch (action.type) {
     case 'UPDATE_QUERY_STRING':
       return action.queryString

@@ -6,19 +6,19 @@
 
 
 // Manages updating all the contacts
-function contacts(state = {}, action) {
-  console.log({state, action});
+// state === contacts
+function contacts(state = new Map(), action) {
 
   switch (action.type) {
     case 'ADD_CONTACT': { // Parentheses are needed for creating local variables
-      const newContacts = new Map(state.contacts); // Clone contacts
+      const newContacts = new Map(state); // Clone contacts
       newContacts.set(action.name, action.item);
       // Return the new state with new contact
       return newContacts;
     }
 
     case 'EDIT_CONTACT': { // Parentheses are needed for creating local variables
-      const newContacts = new Map(state.contacts); // Clone contacts
+      const newContacts = new Map(state); // Clone contacts
       newContacts.delete(action.oldName);
       newContacts.set(action.newName, action.item);
       // Return the new state with edited contact
@@ -26,7 +26,7 @@ function contacts(state = {}, action) {
     }
 
     case 'REMOVE_CONTACT': { // Parentheses are needed for creating local variables
-      const newContacts = new Map(state.contacts); // Clone contacts
+      const newContacts = new Map(state); // Clone contacts
       newContacts.delete(action.name);
       // Return the new state without the deleted contact
       return newContacts;
