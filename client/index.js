@@ -8,6 +8,9 @@ import App from './components/App';
 
 import store from './store';
 
+// ES7 map.prototype.tojson polyfill
+import tojson from 'map.prototype.tojson';
+
 
 const provider = (
   <Provider store={store}>
